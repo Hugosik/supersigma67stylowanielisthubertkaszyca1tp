@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>LiStY</title>
+    <style>
+        #a {
+            list-style-type: disc;
+            color:red;
+        }
+        #b {
+            list-style-type: circle;
+            color:cadetblue
+        }
+        #c {
+            list-style-type: square;
+            color:orange
+        }
+        #d {
+            list-style-type: none;
+            color:cyan;
+        }
+        #e {
+            list-style: none;
+            list-style-image: url('67.png');
+            color:lightgreen;
+        }
+        .wewnatrz {
+            list-style-position: inside;
+            border: 1px solid black;
+            width: 200px;
+            color:purple
+        }
+        .zewnatrz {
+            list-style-position: outside;
+            border: 1px solid black;
+            width: 200px;
+            color:blue
+        }
+        #f {
+            list-style: square outside;
+        }
+        ul{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>list-style-type:...;</li>
+        <li id="a">Klasyczny punktator-disc</li>
+        <li id="b">Pusty okrąg-circle</li>
+        <li id="c">Kwadrat-square</li>
+        <li id="d">Brak punktatora-none</li>
+        <li id="e">Obraz jako punktator-  list-style: none; list-style-image: url('sciezka/do/obrazka.png');</li>
+    </ul>
+        <ul class="zewnatrz">
+            <li>Znacznik zewnątrz-list-style-position: outside;</li>
+        </ul>
+
+    <ul class="wewnatrz">
+        <li>Znacznik wewnątrz-list-style-position: inside;</li>
+    </ul>
+    <ul>
+        <li id="f">Skrócony zapis właściwości, punktator kwadrat, znacznik zewnątrz: list-style: square outside;</li>
+    </ul>
+</body>
+</html>
